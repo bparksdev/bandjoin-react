@@ -14,7 +14,7 @@ const RegistrationForm = () => {
         const body = JSON.stringify({username: email, email: email, firstname: firstname, lastname: lastname})
         console.log(body)
         try {
-            fetch('http://api.bandjoin.com/users.cfc?method=adduser', {
+            fetch('https://api.bandjoin.com/users.cfc?method=adduser', {
                 method: 'POST',
                 body: JSON.stringify({
                     firstname: firstname,
